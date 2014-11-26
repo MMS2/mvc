@@ -1,0 +1,46 @@
+CONSTANTES
+BASEURL
+
+URL
+pegar valor do request uri = Texto::uri(id); """"nao conta controller inicial ex: site/..., web/...	""" nao usar echo e nem retur, pode ser inserido direto""""""
+
+Links
+Texto::link($a,$titulo);
+Texto::imganchor("link","Titulo","Imagem","Alt");
+
+Headers
+Texto::h1("header");
+Texto::h2("header");
+Texto::h3("header");
+Texto::h4("header");
+Texto::h5("header");
+Texto::h6("header");
+
+Model
+Ver todos os registros = verAll($tabela);
+Ver somente um item ou grupo com mesmo indice( area, nome, etc); = verFiltro($tabela , $array )
+
+
+
+Controller
+Sempre que usar Model extanciar dentro de uma variavel  = 	$model = $this->model("nome do model");
+$model->funcao_model('condicao');
+
+Buscando
+Todos os registros = return $this->verbd('nome da tabela');
+Filtrando =  return $this->verbd('nome da tabela', "where", "order by / limite ");
+
+
+Retornando url link + banco de dados = $desc = new arrayIterator($link);
+retornando =  $desc->current()->id;
+
+apagando  id + banco de dados = Passando a variavel anterior na fun($link)
+								$data = array('id'=>$link);
+								return $this->delete('tabela', $data)
+
+Inserindo conteudo  = $data = array('nome da linha da tabela'=> input ou string);
+						return $this -> insertdb("tabela", $data);
+
+
+
+

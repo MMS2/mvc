@@ -1,0 +1,249 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+    .overflow {overflow: hidden;}
+    .container                 { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container .coluna,
+    .container .colunas        { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .linha                       { margin-bottom: 20px; }
+
+    /* Nested coluna
+ Classes */
+    .coluna .alpha,
+    .colunas .alpha               { margin-left: 0; }
+    .coluna .omega,
+    .colunas .omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .c1.coluna,
+    .container .c1.colunas                     { width: 40px;  }
+    .container .c2.colunas                     { width: 100px; }
+    .container .c3.colunas                   { width: 160px; }
+    .container .c4.colunas                    { width: 220px; }
+    .container .c5.colunas                    { width: 280px; }
+    .container .c6.colunas                     { width: 340px; }
+    .container .c7.colunas                   { width: 400px; }
+    .container .c8.colunas                   { width: 460px; }
+    .container .c9.colunas                    { width: 520px; }
+    .container .c10.colunas                     { width: 580px; }
+    .container .c11.colunas                  { width: 640px; }
+    .container .c12.colunas                  { width: 700px; }
+    .container .c13.colunas                { width: 760px; }
+    .container .c14.colunas                { width: 820px; }
+    .container .c15.colunas                 { width: 880px; }
+    .container .c16.colunas                 { width: 940px; }
+
+    .container .c1-3.coluna                { width: 300px; }
+    .container .12-3.coluna               { width: 620px; }
+
+    /* Offsets */
+    .container .off1                   { padding-left: 60px;  }
+    .container .off2                   { padding-left: 120px; }
+    .container .off3                 { padding-left: 180px; }
+    .container .off4                  { padding-left: 240px; }
+    .container .off5                 { padding-left: 300px; }
+    .container .off6                   { padding-left: 360px; }
+    .container .off7                 { padding-left: 420px; }
+    .container .off8                { padding-left: 480px; }
+    .container .off9                 { padding-left: 540px; }
+    .container .off10                  { padding-left: 600px; }
+    .container .off11                { padding-left: 660px; }
+    .container .off12                { padding-left: 720px; }
+    .container .off13              { padding-left: 780px; }
+    .container .off14              { padding-left: 840px; }
+    .container .off15               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .coluna,
+        .container .colunas                         { margin-left: 10px; margin-right: 10px;  }
+        .coluna .alpha,
+        .colunas .alpha               { margin-left: 0; margin-right: 10px; }
+        .coluna .omega,
+        .colunas .omega               { margin-right: 0; margin-left: 10px; }
+        .alpha .omega                               { margin-left: 0; margin-right: 0; }
+
+        .container .c1.coluna,
+        .container .c1.colunas                     { width: 28px; }
+        .container .c2.colunas                     { width: 76px; }
+        .container .c3.colunas                   { width: 124px; }
+        .container .c4.colunas                    { width: 172px; }
+        .container .c5.colunas                    { width: 220px; }
+        .container .c6.colunas                     { width: 268px; }
+        .container .c7.colunas                   { width: 316px; }
+        .container .c8.colunas                   { width: 364px; }
+        .container .c9.colunas                    { width: 412px; }
+        .container .c10.colunas                     { width: 460px; }
+        .container .c11.colunas                  { width: 508px; }
+        .container .c12.colunas                  { width: 556px; }
+        .container .c13.colunas                { width: 604px; }
+        .container .c14.colunas                { width: 652px; }
+        .container .c15.colunas                 { width: 700px; }
+        .container .c16.colunas                 { width: 748px; }
+        .container .1-3.coluna                { width: 236px; }
+        .container .2-4.coluna               { width: 492px; }
+
+        /* Offsets */
+        .container .off1                   { padding-left: 48px; }
+        .container .off2                   { padding-left: 96px; }
+        .container .off3                { padding-left: 144px; }
+        .container .off4                  { padding-left: 192px; }
+        .container .off5                 { padding-left: 240px; }
+        .container .off6                   { padding-left: 288px; }
+        .container .off7                 { padding-left: 336px; }
+        .container .off8                 { padding-left: 384px; }
+        .container .off9                  { padding-left: 432px; }
+        .container .off10                  { padding-left: 480px; }
+        .container .off11                { padding-left: 528px; }
+        .container .off12                { padding-left: 576px; }
+        .container .off13              { padding-left: 624px; }
+        .container .off14              { padding-left: 672px; }
+        .container .off15               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .colunas,
+        .container .coluna { margin: 0; }
+
+        .container .c1.coluna,
+        .container .c1.colunas,
+        .container .c2.colunas,
+        .container .c3.colunas,
+        .container .c4.colunas,
+        .container .c5.colunas,
+        .container .c6.colunas,
+        .container .c7.colunas,
+        .container .c8.colunas,
+        .container .c9.colunas,
+        .container .c10.colunas,
+        .container .c11.colunas,
+        .container .c12.colunas,
+        .container .c13.colunas,
+        .container .c14.colunas,
+        .container .c15.colunas,
+        .container .c16.colunas,
+        .container .c1-3.coluna,
+        .container .c2-3.coluna  { width: 300px; }
+
+        /* Offsets */
+        .container .off1,
+        .container .off2,
+        .container .off3,
+        .container .off4,
+        .container .off5,
+        .container .off6,
+        .container .off7,
+        .container .off8,
+        .container .off9,
+        .container .off10,
+        .container .off11,
+        .container .off12,
+        .container .off13,
+        .container .off14,
+        .container .off15 { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .colunas,
+        .container .coluna { margin: 0; }
+
+        .container .c1.coluna,
+        .container .c1.colunas,
+        .container .c2.colunas,
+        .container .c3.colunas,
+        .container .c4.colunas,
+        .container .c5.colunas,
+        .container .c6.colunas,
+        .container .c7.colunas,
+        .container .c8.colunas,
+        .container .c9.colunas,
+        .container .c10.colunas,
+        .container .c11.colunas,
+        .container .c12.colunas,
+        .container .c13.colunas,
+        .container .c14.colunas,
+        .container .c15.colunas,
+        .container .c16.colunas,
+        .container .c1-3.coluna,
+        .container .c2-3.coluna { width: 420px; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested colunas
+,
+    or wrap each linha of colunas
+ in a <div class="linha"> */
+    .clearfix:before,
+    .clearfix:after,
+    .linha:before,
+    .linha:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .linha:after,
+    .clearfix:after {
+      clear: both; }
+    .linha,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear colunas
+ */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
